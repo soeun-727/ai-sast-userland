@@ -9,7 +9,7 @@ BoB 15기 보안컨설팅 트랙 박소은
 - 환경: Windows PowerShell, Python
 - 기준선 C/C++ 관련 파일: 654개
 - 위험 API 출현 후보: 832개
-- 작성한 도구 저장소: **제출 전 GitHub URL 입력 필요**
+- 작성한 도구 저장소: https://github.com/soeun-727/ai-sast-userland.git
 - LLM 검토 패킷: 16개
 - 원시 finding: 9건
 - 최종 판정: confirmed 7건, likely 2건, false positive 0건
