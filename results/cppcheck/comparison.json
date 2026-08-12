@@ -1,0 +1,63 @@
+{
+  "cppcheck_version": "Cppcheck 2.21.0",
+  "matched_scope": {
+    "files": 3,
+    "seconds": 1.212,
+    "warnings_total": 84,
+    "security_relevant_warnings": 7,
+    "by_severity": {
+      "style": 77,
+      "warning": 7
+    },
+    "by_id": {
+      "knownConditionTrueFalse": 3,
+      "invalidScanfArgType_int": 3,
+      "funcArgNamesDifferent": 22,
+      "constParameterPointer": 3,
+      "unreadVariable": 36,
+      "variableScope": 7,
+      "constVariablePointer": 3,
+      "invalidPrintfArgType_uint": 1,
+      "invalidPrintfArgType_sint": 2,
+      "nullPointerOutOfMemory": 1,
+      "redundantContinue": 2,
+      "funcArgNamesDifferentUnnamed": 1
+    }
+  },
+  "full_scope": {
+    "seconds": 60.648,
+    "warnings_total": 1637,
+    "security_relevant_warnings": 459,
+    "by_severity": {
+      "style": 1133,
+      "warning": 208,
+      "portability": 45,
+      "error": 251
+    },
+    "top_ids": {
+      "variableScope": 222,
+      "constVariablePointer": 214,
+      "missingReturn": 205,
+      "unreadVariable": 133,
+      "constParameterPointer": 98,
+      "funcArgNamesDifferentUnnamed": 92,
+      "funcArgNamesDifferent": 85,
+      "invalidPrintfArgType_sint": 61,
+      "shadowVariable": 56,
+      "redundantAssignment": 47,
+      "invalidScanfArgType_int": 47,
+      "knownConditionTrueFalse": 37,
+      "constParameterCallback": 34,
+      "nullPointerOutOfMemory": 30,
+      "invalidPointerCast": 28
+    }
+  },
+  "comparison": {
+    "ai_findings": 9,
+    "common": 1,
+    "ai_only": 8,
+    "cppcheck_matched_scope_unmatched_warnings": 83,
+    "cppcheck_security_unmatched": 6
+  },
+  "method": "Same normalized file and Cppcheck primary line inside the AI range or within 3 lines of its reported sink; common matches require manual semantic confirmation."
+}

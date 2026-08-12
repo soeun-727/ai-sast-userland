@@ -1,0 +1,14 @@
+{
+  "mode": "execute",
+  "provider": "gemini",
+  "request_count": 16,
+  "completed": 16,
+  "failed": 0,
+  "prompt_version": "security-reviewer-v1",
+  "usage": {
+    "input_tokens": 54995,
+    "output_tokens": 5203,
+    "total_tokens": 69567
+  },
+  "latency_seconds": 374.346
+}

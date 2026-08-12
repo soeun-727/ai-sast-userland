@@ -1,0 +1,6 @@
+{
+  "selected_priorities": ["high", "medium"],
+  "max_packet_estimated_tokens": 4000,
+  "max_related_functions": 3,
+  "max_include_directives": 30
+}

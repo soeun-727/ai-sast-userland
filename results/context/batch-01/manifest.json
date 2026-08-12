@@ -1,0 +1,8 @@
+{
+  "batch_id": "batch-01",
+  "input_chunks": 44,
+  "review_packets": 1,
+  "related_functions_included": 3,
+  "packet_estimated_tokens": 1936,
+  "packets_over_budget": 0
+}

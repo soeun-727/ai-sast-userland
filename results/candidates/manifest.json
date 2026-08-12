@@ -1,0 +1,70 @@
+{
+  "batches": [
+    {
+      "batch_id": "batch-01",
+      "total_chunks": 44,
+      "candidate_chunks": 1,
+      "high_priority_chunks": 1,
+      "priority_counts": {
+        "high": 1,
+        "medium": 0,
+        "low": 43
+      },
+      "api_counts": {
+        "sscanf": 15
+      },
+      "total_estimated_tokens": 10000,
+      "candidate_estimated_tokens": 1709,
+      "estimated_tokens_avoided": 8291,
+      "candidate_token_reduction_percent": 82.91
+    },
+    {
+      "batch_id": "batch-02",
+      "total_chunks": 18,
+      "candidate_chunks": 4,
+      "high_priority_chunks": 1,
+      "priority_counts": {
+        "high": 1,
+        "medium": 1,
+        "low": 16
+      },
+      "api_counts": {
+        "free": 9,
+        "open": 5,
+        "memcpy": 2,
+        "calloc": 1,
+        "malloc": 1
+      },
+      "total_estimated_tokens": 5090,
+      "candidate_estimated_tokens": 3850,
+      "estimated_tokens_avoided": 1240,
+      "candidate_token_reduction_percent": 24.36
+    },
+    {
+      "batch_id": "batch-03",
+      "total_chunks": 75,
+      "candidate_chunks": 21,
+      "high_priority_chunks": 4,
+      "priority_counts": {
+        "high": 4,
+        "medium": 9,
+        "low": 62
+      },
+      "api_counts": {
+        "free": 18,
+        "memcpy": 12,
+        "malloc": 10,
+        "strcpy": 6,
+        "sprintf": 3,
+        "calloc": 3,
+        "fopen": 3,
+        "memmove": 1,
+        "realloc": 1
+      },
+      "total_estimated_tokens": 20797,
+      "candidate_estimated_tokens": 10425,
+      "estimated_tokens_avoided": 10372,
+      "candidate_token_reduction_percent": 49.87
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "input_findings": 9,
+  "deduplicated_findings": 9,
+  "confirmed": 7,
+  "likely": 2,
+  "false_positive": 0,
+  "source_verified": 9
+}

@@ -1,0 +1,59 @@
+{
+  "version": "validator-v1",
+  "decisions": {
+    "review-function-c9450640344f3fcf::FINDING-01": {
+      "disposition": "confirmed",
+      "confidence": 0.98,
+      "attack_surface": "A crafted device-tree override literal can exceed the caller's fixed 256-byte destination.",
+      "rationale": "The function receives value_size but line 2101 uses strcpy without consulting it. The literal is only checked for NUL termination, not destination capacity."
+    },
+    "review-function-8501e574acf57400::FINDING-001": {
+      "disposition": "confirmed",
+      "confidence": 0.9,
+      "attack_surface": "Malformed or unreadable VideoCore symbol data can select an error path after allocations.",
+      "rationale": "The error path closes memFd and frees newHandle, but does not free newHandle->symbol or labels already allocated with vcos_strdup. The model's evidence was incomplete, but the leak exists."
+    },
+    "review-function-64d5cf84ca2e6f30::FINDING-001": {
+      "disposition": "confirmed",
+      "confidence": 0.94,
+      "attack_surface": "A large address/length pair supplied to the memory-access API can wrap unsigned arithmetic.",
+      "rationale": "Both the end-address check and mmap size calculation add attacker-influenced numeric values without overflow-safe subtraction checks."
+    },
+    "review-function-8164cf617fb29188::FINDING-001": {
+      "disposition": "confirmed",
+      "confidence": 0.99,
+      "attack_surface": "An override string longer than 255 decoded bytes writes beyond a stack buffer.",
+      "rationale": "The decode loop and final terminator increment q without checking it against the 256-byte unescaped_value array."
+    },
+    "review-function-e94acba5288189be::FINDING-001": {
+      "disposition": "confirmed",
+      "confidence": 0.97,
+      "attack_surface": "An oversized override value reaches a static 256-byte destination.",
+      "rationale": "Line 1859 performs an unbounded strcpy into target_value. No local length check precedes the copy."
+    },
+    "review-function-e94acba5288189be::FINDING-002": {
+      "disposition": "confirmed",
+      "confidence": 0.96,
+      "attack_surface": "A crafted override property name can produce name_len greater than 255.",
+      "rationale": "name_len controls memcpy and the subsequent terminator into prop_name[256] without a capacity check."
+    },
+    "review-function-29ff00deda0e21ce::FINDING-001": {
+      "disposition": "likely",
+      "confidence": 0.82,
+      "attack_surface": "A caller-controlled overlay directory longer than DTOVERLAY_MAX_PATH minus the suffix can overflow map_file.",
+      "rationale": "sprintf is unbounded and strlen is used only to select a slash. Exploitability depends on whether every external caller constrains overlay_dir."
+    },
+    "review-function-1b328832db0e9b10::finding-1b328832db0e9b10-1": {
+      "disposition": "likely",
+      "confidence": 0.78,
+      "attack_surface": "A very large requested dynamic-string size can overflow signed int growth arithmetic.",
+      "rationale": "size * 5 can overflow before realloc. Practical reachability depends on upstream DTB and process-size constraints."
+    },
+    "review-function-4034b163f2292370::finding-dtoverlay-null-deref-malloc": {
+      "disposition": "confirmed",
+      "confidence": 0.99,
+      "attack_surface": "Memory exhaustion after fdt_setprop_inplace fails causes a process crash.",
+      "rationale": "malloc(prop_len) is immediately passed to memcpy without a NULL check. This is a reliable availability flaw under allocation failure."
+    }
+  }
+}

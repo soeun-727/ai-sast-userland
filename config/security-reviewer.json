@@ -1,0 +1,10 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.6-flash",
+  "reasoning_effort": "low",
+  "max_output_tokens": 5000,
+  "max_retries": 2,
+  "retry_base_seconds": 5.0,
+  "request_interval_seconds": 4.0,
+  "prompt_version": "security-reviewer-v1"
+}

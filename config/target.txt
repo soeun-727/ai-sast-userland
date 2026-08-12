@@ -1,0 +1,4 @@
+TARGET_REPOSITORY=https://github.com/raspberrypi/userland.git
+TARGET_BRANCH=master
+TARGET_COMMIT=a54a0dbb2b8dcf9bafdddfc9a9374fb51d97e976
+TARGET_COMMIT_DATE=2024-12-23 13:52:07 +1100

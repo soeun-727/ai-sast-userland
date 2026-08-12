@@ -1,0 +1,11 @@
+{
+  "batch_id": "batch-03",
+  "relative_path": "helpers/dtoverlay/dtoverlay.c",
+  "language": "c",
+  "source_bytes": 90023,
+  "function_count": 75,
+  "root_has_parse_error": true,
+  "total_estimated_tokens": 20797,
+  "largest_chunk_tokens": 2635,
+  "parse_error_chunks": 2
+}

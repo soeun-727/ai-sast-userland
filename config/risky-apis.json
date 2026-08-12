@@ -1,0 +1,30 @@
+{
+  "apis": {
+    "strcpy": {"category": "string", "weight": 3},
+    "strcat": {"category": "string", "weight": 3},
+    "sprintf": {"category": "string", "weight": 3},
+    "vsprintf": {"category": "string", "weight": 3},
+    "gets": {"category": "input", "weight": 4},
+    "scanf": {"category": "input", "weight": 2},
+    "sscanf": {"category": "input", "weight": 2},
+    "memcpy": {"category": "memory", "weight": 2},
+    "memmove": {"category": "memory", "weight": 2},
+    "malloc": {"category": "memory", "weight": 1},
+    "calloc": {"category": "memory", "weight": 1},
+    "realloc": {"category": "memory", "weight": 2},
+    "free": {"category": "memory", "weight": 1},
+    "fopen": {"category": "file", "weight": 2},
+    "open": {"category": "file", "weight": 2},
+    "system": {"category": "command", "weight": 4},
+    "popen": {"category": "command", "weight": 4}
+  },
+  "scoring": {
+    "parse_error_bonus": 2,
+    "large_chunk_bonus": 1,
+    "large_chunk_threshold": 2000
+  },
+  "priority": {
+    "high": 8,
+    "medium": 4
+  }
+}

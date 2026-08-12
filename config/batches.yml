@@ -1,0 +1,39 @@
+﻿batches:
+  - id: batch-01
+    name: string-input
+    file: host_applications/linux/apps/raspicam/RaspiCamControl.c
+    focus:
+      - string-handling
+      - input-validation
+      - buffer-boundary
+    selection_reason: >
+      문자열 관련 위험 API 후보가 가장 많이 발견된 프로젝트 구현 파일이다.
+
+  - id: batch-02
+    name: file-system
+    file: host_applications/linux/libs/debug_sym/debug_sym.c
+    focus:
+      - file-handling
+      - resource-management
+      - error-handling
+    selection_reason: >
+      파일 처리 후보가 가장 많이 발견되었으며 메모리 처리도 함께 포함한다.
+
+  - id: batch-03
+    name: memory-pointer
+    file: helpers/dtoverlay/dtoverlay.c
+    focus:
+      - memory-allocation
+      - memory-copy
+      - pointer-safety
+      - chunking
+    selection_reason: >
+      메모리 관련 후보가 가장 많고 파일 크기가 커서 함수 단위 분할을
+      검증하기에 적합하다.
+
+reserve:
+  id: reserve-01
+  name: network-parser
+  file: containers/rtsp/rtsp_reader.c
+  selection_reason: >
+    네트워크 프로토콜 파싱과 메모리 처리를 함께 검토할 수 있는 예비 대상이다.

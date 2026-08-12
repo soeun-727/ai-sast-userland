@@ -1,0 +1,20 @@
+{
+  "scope": "matched",
+  "version": "Cppcheck 2.21.0",
+  "exit_code": 0,
+  "seconds": 1.212,
+  "target_count": 3,
+  "command": [
+    "C:\\BoB_General\\과제와실습\\ai-sast-userland\\tools\\cppcheck\\PFiles\\Cppcheck\\cppcheck.exe",
+    "C:\\BoB_General\\과제와실습\\userland\\host_applications\\linux\\apps\\raspicam\\RaspiCamControl.c",
+    "C:\\BoB_General\\과제와실습\\userland\\host_applications\\linux\\libs\\debug_sym\\debug_sym.c",
+    "C:\\BoB_General\\과제와실습\\userland\\helpers\\dtoverlay\\dtoverlay.c",
+    "--enable=warning,style,performance,portability",
+    "--inconclusive",
+    "--check-level=exhaustive",
+    "--platform=unix64",
+    "--suppress=missingIncludeSystem",
+    "--xml",
+    "--xml-version=2"
+  ]
+}

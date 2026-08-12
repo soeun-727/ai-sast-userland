@@ -1,0 +1,18 @@
+{
+  "batch_id": "batch-01",
+  "total_chunks": 44,
+  "candidate_chunks": 1,
+  "high_priority_chunks": 1,
+  "priority_counts": {
+    "high": 1,
+    "medium": 0,
+    "low": 43
+  },
+  "api_counts": {
+    "sscanf": 15
+  },
+  "total_estimated_tokens": 10000,
+  "candidate_estimated_tokens": 1709,
+  "estimated_tokens_avoided": 8291,
+  "candidate_token_reduction_percent": 82.91
+}

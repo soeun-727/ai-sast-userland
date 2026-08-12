@@ -1,0 +1,34 @@
+﻿target:
+  repository: "../userland"
+  branch: "master"
+  commit: "a54a0dbb2b8dcf9bafdddfc9a9374fb51d97e976"
+
+languages:
+  - c
+  - cpp
+
+include_extensions:
+  - .c
+  - .cpp
+  - .h
+
+exclude_directories:
+  - .git
+  - build
+  - out
+
+low_priority_directories:
+  - test
+  - tests
+  - example
+  - examples
+  - opensrc
+
+chunking:
+  strategy: function
+  preserve_line_numbers: true
+  max_file_size_kb: 500
+
+candidate_detection:
+  risky_api_result_count: 832
+  risky_api_file: "results/baseline/risky-api-occurrences.csv"

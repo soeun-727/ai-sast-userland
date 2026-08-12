@@ -1,0 +1,18 @@
+{
+  "scope": "full",
+  "version": "Cppcheck 2.21.0",
+  "exit_code": 0,
+  "seconds": 60.648,
+  "target_count": null,
+  "command": [
+    "C:\\BoB_General\\과제와실습\\ai-sast-userland\\tools\\cppcheck\\PFiles\\Cppcheck\\cppcheck.exe",
+    "C:\\BoB_General\\과제와실습\\userland",
+    "--enable=warning,style,performance,portability",
+    "--inconclusive",
+    "--check-level=exhaustive",
+    "--platform=unix64",
+    "--suppress=missingIncludeSystem",
+    "--xml",
+    "--xml-version=2"
+  ]
+}

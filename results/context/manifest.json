@@ -1,0 +1,28 @@
+{
+  "batches": [
+    {
+      "batch_id": "batch-01",
+      "input_chunks": 44,
+      "review_packets": 1,
+      "related_functions_included": 3,
+      "packet_estimated_tokens": 1936,
+      "packets_over_budget": 0
+    },
+    {
+      "batch_id": "batch-02",
+      "input_chunks": 18,
+      "review_packets": 2,
+      "related_functions_included": 2,
+      "packet_estimated_tokens": 3813,
+      "packets_over_budget": 0
+    },
+    {
+      "batch_id": "batch-03",
+      "input_chunks": 75,
+      "review_packets": 13,
+      "related_functions_included": 24,
+      "packet_estimated_tokens": 14129,
+      "packets_over_budget": 0
+    }
+  ]
+}

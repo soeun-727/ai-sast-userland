@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.21.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;command_id!=-1&apos; is always true" verbose="Condition &apos;command_id!=-1&apos; is always true" cwe="571" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="578" column="38" info="Condition &apos;command_id!=-1&apos; is always true"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;increased_size&lt;crop.rect.width&apos; is always false" verbose="Condition &apos;increased_size&lt;crop.rect.width&apos; is always false" cwe="570" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1510" column="26" info="Condition &apos;increased_size&lt;crop.rect.width&apos; is always false"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1509" column="35" info="increased_size is assigned &apos;crop.rect.width+(65536UL/10)&apos; here."/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%u in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%u in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="779" column="7"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%X in format string (no. 2) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%X in format string (no. 2) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="779" column="7"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%X in format string (no. 3) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." verbose="%X in format string (no. 3) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;." cwe="686" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="779" column="7"/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;raspicamcontrol_set_metering_mode&apos; argument 2 names different: declaration &apos;mode&apos; definition &apos;m_mode&apos;." verbose="Function &apos;raspicamcontrol_set_metering_mode&apos; argument 2 names different: declaration &apos;mode&apos; definition &apos;m_mode&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1212" column="99"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.h" line="205" column="99"/>
+            <symbol>raspicamcontrol_set_metering_mode</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;raspicamcontrol_set_shutter_speed&apos; argument 2 names different: declaration &apos;speed_ms&apos; definition &apos;speed&apos;." verbose="Function &apos;raspicamcontrol_set_shutter_speed&apos; argument 2 names different: declaration &apos;speed_ms&apos; definition &apos;speed&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1558" column="69"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.h" line="218" column="69"/>
+            <symbol>raspicamcontrol_set_shutter_speed</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;raspicamcontrol_set_annotate&apos; argument 2 names different: declaration &apos;bitmask&apos; definition &apos;settings&apos;." verbose="Function &apos;raspicamcontrol_set_annotate&apos; argument 2 names different: declaration &apos;bitmask&apos; definition &apos;settings&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1611" column="70"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.h" line="221" column="70"/>
+            <symbol>raspicamcontrol_set_annotate</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;stereo_mode&apos; can be declared as pointer to const" verbose="Parameter &apos;stereo_mode&apos; can be declared as pointer to const" cwe="398" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1721" column="92" info="Parameter &apos;stereo_mode&apos; can be declared as pointer to const"/>
+            <symbol>stereo_mode</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;colfx.enable&apos; is assigned a value that is never used." verbose="Variable &apos;colfx.enable&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1406" column="17"/>
+            <symbol>colfx.enable</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;colfx.u&apos; is assigned a value that is never used." verbose="Variable &apos;colfx.u&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1407" column="12"/>
+            <symbol>colfx.u</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;colfx.v&apos; is assigned a value that is never used." verbose="Variable &apos;colfx.v&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1408" column="12"/>
+            <symbol>colfx.v</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mirror.value&apos; is assigned a value that is never used." verbose="Variable &apos;mirror.value&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1446" column="20"/>
+            <symbol>mirror.value</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mirror.value&apos; is assigned a value that is never used." verbose="Variable &apos;mirror.value&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1448" column="20"/>
+            <symbol>mirror.value</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mirror.value&apos; is assigned a value that is never used." verbose="Variable &apos;mirror.value&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1450" column="20"/>
+            <symbol>mirror.value</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.enable&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.enable&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1625" column="23"/>
+            <symbol>annotate.enable</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.show_shutter&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.show_shutter&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1669" column="32"/>
+            <symbol>annotate.show_shutter</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.show_analog_gain&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.show_analog_gain&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1672" column="36"/>
+            <symbol>annotate.show_analog_gain</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.show_lens&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.show_lens&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1675" column="29"/>
+            <symbol>annotate.show_lens</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.show_caf&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.show_caf&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1678" column="28"/>
+            <symbol>annotate.show_caf</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.show_motion&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.show_motion&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1681" column="31"/>
+            <symbol>annotate.show_motion</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.show_frame_num&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.show_frame_num&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1684" column="34"/>
+            <symbol>annotate.show_frame_num</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.enable_text_background&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.enable_text_background&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1687" column="42"/>
+            <symbol>annotate.enable_text_background</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.text_size&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.text_size&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1689" column="26"/>
+            <symbol>annotate.text_size</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_text_colour&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_text_colour&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1693" column="38"/>
+            <symbol>annotate.custom_text_colour</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_text_Y&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_text_Y&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1694" column="33"/>
+            <symbol>annotate.custom_text_Y</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_text_U&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_text_U&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1695" column="33"/>
+            <symbol>annotate.custom_text_U</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_text_V&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_text_V&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1696" column="33"/>
+            <symbol>annotate.custom_text_V</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_text_colour&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_text_colour&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1699" column="38"/>
+            <symbol>annotate.custom_text_colour</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_background_colour&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_background_colour&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1703" column="44"/>
+            <symbol>annotate.custom_background_colour</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_background_Y&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_background_Y&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1704" column="39"/>
+            <symbol>annotate.custom_background_Y</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_background_U&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_background_U&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1705" column="39"/>
+            <symbol>annotate.custom_background_U</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_background_V&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_background_V&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1706" column="39"/>
+            <symbol>annotate.custom_background_V</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.custom_background_colour&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.custom_background_colour&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1709" column="44"/>
+            <symbol>annotate.custom_background_colour</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.justify&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.justify&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1711" column="24"/>
+            <symbol>annotate.justify</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.x_offset&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.x_offset&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1712" column="25"/>
+            <symbol>annotate.x_offset</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.y_offset&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.y_offset&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1713" column="25"/>
+            <symbol>annotate.y_offset</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;annotate.enable&apos; is assigned a value that is never used." verbose="Variable &apos;annotate.enable&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1716" column="23"/>
+            <symbol>annotate.enable</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;stereo.mode&apos; is assigned a value that is never used." verbose="Variable &apos;stereo.mode&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1728" column="19"/>
+            <symbol>stereo.mode</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;stereo.decimate&apos; is assigned a value that is never used." verbose="Variable &apos;stereo.decimate&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1729" column="23"/>
+            <symbol>stereo.decimate</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;stereo.swap_eyes&apos; is assigned a value that is never used." verbose="Variable &apos;stereo.swap_eyes&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/apps/raspicam/RaspiCamControl.c" line="1730" column="24"/>
+            <symbol>stereo.swap_eyes</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;expected_error&apos; can be reduced." verbose="The scope of the variable &apos;expected_error&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="155" column="16"/>
+            <symbol>expected_error</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;i&apos; can be reduced." verbose="The scope of the variable &apos;i&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="847" column="14"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;OpenVideoCoreMemory&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandlePtr&apos;." verbose="Function &apos;OpenVideoCoreMemory&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandlePtr&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="131" column="50"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="69" column="50"/>
+            <symbol>OpenVideoCoreMemory</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;NumVideoCoreSymbols&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;NumVideoCoreSymbols&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="506" column="54"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="101" column="54"/>
+            <symbol>NumVideoCoreSymbols</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;GetVideoCoreSymbol&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;GetVideoCoreSymbol&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="517" column="48"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="106" column="48"/>
+            <symbol>GetVideoCoreSymbol</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;GetVideoCoreSymbol&apos; argument 3 names different: declaration &apos;nameBuf&apos; definition &apos;labelBuf&apos;." verbose="Function &apos;GetVideoCoreSymbol&apos; argument 3 names different: declaration &apos;nameBuf&apos; definition &apos;labelBuf&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="517" column="78"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="108" column="31"/>
+            <symbol>GetVideoCoreSymbol</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;GetVideoCoreSymbol&apos; argument 4 names different: declaration &apos;nameBufSize&apos; definition &apos;labelBufSize&apos;." verbose="Function &apos;GetVideoCoreSymbol&apos; argument 4 names different: declaration &apos;nameBufSize&apos; definition &apos;labelBufSize&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="517" column="95"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="109" column="32"/>
+            <symbol>GetVideoCoreSymbol</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;LookupVideoCoreSymbol&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;LookupVideoCoreSymbol&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="551" column="51"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="119" column="51"/>
+            <symbol>LookupVideoCoreSymbol</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;LookupVideoCoreUInt32Symbol&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;LookupVideoCoreUInt32Symbol&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="596" column="57"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="128" column="57"/>
+            <symbol>LookupVideoCoreUInt32Symbol</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;ReadVideoCoreMemory&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;ReadVideoCoreMemory&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="745" column="49"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="138" column="49"/>
+            <symbol>ReadVideoCoreMemory</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;ReadVideoCoreMemoryBySymbol&apos; argument 4 names different: declaration &apos;numBytes&apos; definition &apos;bufSize&apos;." verbose="Function &apos;ReadVideoCoreMemoryBySymbol&apos; argument 4 names different: declaration &apos;numBytes&apos; definition &apos;bufSize&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="759" column="105"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="159" column="57"/>
+            <symbol>ReadVideoCoreMemoryBySymbol</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;ReadVideoCoreStringBySymbol&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;ReadVideoCoreStringBySymbol&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="791" column="57"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="174" column="57"/>
+            <symbol>ReadVideoCoreStringBySymbol</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;WriteVideoCoreMemory&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;WriteVideoCoreMemory&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="831" column="50"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="185" column="50"/>
+            <symbol>WriteVideoCoreMemory</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;CloseVideoCoreMemory&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;CloseVideoCoreMemory&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="845" column="51"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="203" column="51"/>
+            <symbol>CloseVideoCoreMemory</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;GetVideoCoreMemoryBase&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;GetVideoCoreMemoryBase&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="865" column="62"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="208" column="62"/>
+            <symbol>GetVideoCoreMemoryBase</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;GetVideoCoreMemorySize&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;GetVideoCoreMemorySize&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="876" column="62"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="213" column="62"/>
+            <symbol>GetVideoCoreMemorySize</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;GetVideoCoreMemoryPhysicalAddress&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." verbose="Function &apos;GetVideoCoreMemoryPhysicalAddress&apos; argument 1 names different: declaration &apos;handle&apos; definition &apos;vcHandle&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="887" column="73"/>
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.h" line="218" column="73"/>
+            <symbol>GetVideoCoreMemoryPhysicalAddress</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;sym&apos; can be declared as pointer to const" verbose="Variable &apos;sym&apos; can be declared as pointer to const" cwe="398" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="519" column="26" info="Variable &apos;sym&apos; can be declared as pointer to const"/>
+            <symbol>sym</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;rc&apos; is assigned a value that is never used." verbose="Variable &apos;rc&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="186" column="32"/>
+            <symbol>rc</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;size&apos; is assigned a value that is never used." verbose="Variable &apos;size&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="230" column="26"/>
+            <symbol>size</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;origVcMemAddr&apos; is assigned a value that is never used." verbose="Variable &apos;origVcMemAddr&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c">
+            <location file="C:/BoB_General/과제와실습/userland/host_applications/linux/libs/debug_sym/debug_sym.c" line="627" column="33"/>
+            <symbol>origVcMemAddr</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err==0&apos; is always true" verbose="Condition &apos;err==0&apos; is always true" cwe="571" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="754" column="33" info="Condition &apos;err==0&apos; is always true"/>
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="748" column="14" info="Assignment &apos;err=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." verbose="%u in format string (no. 1) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." cwe="686" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="542" column="4"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="2106" column="13"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="2163" column="10"/>
+        </error>
+        <error id="nullPointerOutOfMemory" severity="warning" msg="If memory allocation fails, then there is a possible null pointer dereference: prop_data" verbose="If memory allocation fails, then there is a possible null pointer dereference: prop_data" cwe="476" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="2321" column="14" info="Null pointer dereference"/>
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="2320" column="25" info="Assignment &apos;prop_data=malloc(prop_len)&apos;, assigned value is 0"/>
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="2320" column="25" info="Assuming allocation function fails"/>
+            <symbol>prop_data</symbol>
+        </error>
+        <error id="redundantContinue" severity="style" msg="&apos;continue&apos; is redundant since it is the last statement in a loop." verbose="&apos;continue&apos; is redundant since it is the last statement in a loop." cwe="561" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="179" column="10"/>
+        </error>
+        <error id="redundantContinue" severity="style" msg="&apos;continue&apos; is redundant since it is the last statement in a loop." verbose="&apos;continue&apos; is redundant since it is the last statement in a loop." cwe="561" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="1206" column="10"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;prop_off&apos; can be reduced." verbose="The scope of the variable &apos;prop_off&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="430" column="11"/>
+            <symbol>prop_off</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;frag_off&apos; can be reduced." verbose="The scope of the variable &apos;frag_off&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="1741" column="17"/>
+            <symbol>frag_off</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;states&apos; can be reduced." verbose="The scope of the variable &apos;states&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="1752" column="31"/>
+            <symbol>states</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;symbols_off&apos; can be reduced." verbose="The scope of the variable &apos;symbols_off&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="2819" column="8"/>
+            <symbol>symbols_off</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;args&apos; can be reduced." verbose="The scope of the variable &apos;args&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="2957" column="12"/>
+            <symbol>args</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;dtoverlay_create_node&apos; argument 2 names different: declaration &apos;node_name&apos; definition &apos;node_path&apos;." verbose="Function &apos;dtoverlay_create_node&apos; argument 2 names different: declaration &apos;node_name&apos; definition &apos;node_path&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="151" column="54"/>
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.h" line="111" column="54"/>
+            <symbol>dtoverlay_create_node</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;dtoverlay_delete_node&apos; argument 2 names different: declaration &apos;node_name&apos; definition &apos;node_path&apos;." verbose="Function &apos;dtoverlay_delete_node&apos; argument 2 names different: declaration &apos;node_name&apos; definition &apos;node_path&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="201" column="54"/>
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.h" line="113" column="54"/>
+            <symbol>dtoverlay_delete_node</symbol>
+        </error>
+        <error id="funcArgNamesDifferentUnnamed" severity="style" msg="Function &apos;dtoverlay_foreach_override_target&apos; argument 7 names different: declaration &apos;&lt;unnamed&gt;&apos; definition &apos;callback_state&apos;." verbose="Function &apos;dtoverlay_foreach_override_target&apos; argument 7 names different: declaration &apos;&lt;unnamed&gt;&apos; definition &apos;callback_state&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="1825" column="45"/>
+            <symbol>dtoverlay_foreach_override_target</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;dtoverlay_extract_override&apos; argument 6 names different: declaration &apos;dataendp&apos; definition &apos;data_end&apos;." verbose="Function &apos;dtoverlay_extract_override&apos; argument 6 names different: declaration &apos;dataendp&apos; definition &apos;data_end&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="1921" column="71"/>
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="57" column="71"/>
+            <symbol>dtoverlay_extract_override</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;dtoverlay_import_fdt&apos; argument 2 names different: declaration &apos;max_size&apos; definition &apos;buf_size&apos;." verbose="Function &apos;dtoverlay_import_fdt&apos; argument 2 names different: declaration &apos;max_size&apos; definition &apos;buf_size&apos;." cwe="628" inconclusive="true" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="2667" column="47"/>
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.h" line="176" column="47"/>
+            <symbol>dtoverlay_import_fdt</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;str&apos; can be declared as pointer to const" verbose="Variable &apos;str&apos; can be declared as pointer to const" cwe="398" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="1414" column="24" info="Variable &apos;str&apos; can be declared as pointer to const"/>
+            <symbol>str</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;data_end&apos; can be declared as pointer to const" verbose="Variable &apos;data_end&apos; can be declared as pointer to const" cwe="398" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="1829" column="28" info="Variable &apos;data_end&apos; can be declared as pointer to const"/>
+            <symbol>data_end</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;dtb&apos; can be declared as pointer to const" verbose="Parameter &apos;dtb&apos; can be declared as pointer to const" cwe="398" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.h" line="188" column="53" info="Parameter &apos;dtb&apos; can be declared as pointer to const"/>
+            <symbol>dtb</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;dtb&apos; can be declared as pointer to const" verbose="Parameter &apos;dtb&apos; can be declared as pointer to const" cwe="398" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.h" line="193" column="55" info="Parameter &apos;dtb&apos; can be declared as pointer to const"/>
+            <symbol>dtb</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;override_len&apos; is assigned a value that is never used." verbose="Variable &apos;override_len&apos; is assigned a value that is never used." cwe="563" file0="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c">
+            <location file="C:/BoB_General/과제와실습/userland/helpers/dtoverlay/dtoverlay.c" line="2084" column="32"/>
+            <symbol>override_len</symbol>
+        </error>
+    </errors>
+</results>

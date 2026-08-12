@@ -1,0 +1,11 @@
+{
+  "batch_id": "batch-01",
+  "relative_path": "host_applications/linux/apps/raspicam/RaspiCamControl.c",
+  "language": "c",
+  "source_bytes": 61059,
+  "function_count": 44,
+  "root_has_parse_error": false,
+  "total_estimated_tokens": 10000,
+  "largest_chunk_tokens": 1709,
+  "parse_error_chunks": 0
+}

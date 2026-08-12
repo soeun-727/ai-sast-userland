@@ -1,0 +1,22 @@
+{
+  "batch_id": "batch-02",
+  "total_chunks": 18,
+  "candidate_chunks": 4,
+  "high_priority_chunks": 1,
+  "priority_counts": {
+    "high": 1,
+    "medium": 1,
+    "low": 16
+  },
+  "api_counts": {
+    "free": 9,
+    "open": 5,
+    "memcpy": 2,
+    "calloc": 1,
+    "malloc": 1
+  },
+  "total_estimated_tokens": 5090,
+  "candidate_estimated_tokens": 3850,
+  "estimated_tokens_avoided": 1240,
+  "candidate_token_reduction_percent": 24.36
+}

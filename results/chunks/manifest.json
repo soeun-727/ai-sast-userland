@@ -1,0 +1,38 @@
+{
+  "repository": "C:\\BoB_General\\과제와실습\\userland",
+  "batches": [
+    {
+      "batch_id": "batch-01",
+      "relative_path": "host_applications/linux/apps/raspicam/RaspiCamControl.c",
+      "language": "c",
+      "source_bytes": 61059,
+      "function_count": 44,
+      "root_has_parse_error": false,
+      "total_estimated_tokens": 10000,
+      "largest_chunk_tokens": 1709,
+      "parse_error_chunks": 0
+    },
+    {
+      "batch_id": "batch-02",
+      "relative_path": "host_applications/linux/libs/debug_sym/debug_sym.c",
+      "language": "c",
+      "source_bytes": 29174,
+      "function_count": 18,
+      "root_has_parse_error": false,
+      "total_estimated_tokens": 5090,
+      "largest_chunk_tokens": 2702,
+      "parse_error_chunks": 0
+    },
+    {
+      "batch_id": "batch-03",
+      "relative_path": "helpers/dtoverlay/dtoverlay.c",
+      "language": "c",
+      "source_bytes": 90023,
+      "function_count": 75,
+      "root_has_parse_error": true,
+      "total_estimated_tokens": 20797,
+      "largest_chunk_tokens": 2635,
+      "parse_error_chunks": 2
+    }
+  ]
+}

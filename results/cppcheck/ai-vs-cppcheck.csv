@@ -1,0 +1,10 @@
+﻿ai_title,ai_disposition,ai_cwe,file,line,comparison,cppcheck_ids,cppcheck_lines
+Buffer Overflow in `dtoverlay_extract_override` via unbounded `strcpy`,confirmed,CWE-120,helpers/dtoverlay/dtoverlay.c,2101,ai_only,,
+Resource Leak / Memory Leak on Error Path in OpenVideoCoreMemoryFileWithOffsetAndSize,confirmed,CWE-404,host_applications/linux/libs/debug_sym/debug_sym.c,439,ai_only,,
+Integer Overflow in Memory Bounds Check and Size Calculation leading to Out-of-Bounds Memory Access,confirmed,CWE-190,host_applications/linux/libs/debug_sym/debug_sym.c,656,ai_only,,
+Stack-based Buffer Overflow in string override parsing,confirmed,CWE-121,helpers/dtoverlay/dtoverlay.c,1512,ai_only,,
+Stack Buffer Overflow via `strcpy` on `target_value`,confirmed,CWE-120,helpers/dtoverlay/dtoverlay.c,1859,ai_only,,
+Stack Buffer Overflow via `memcpy` on `prop_name`,confirmed,CWE-120,helpers/dtoverlay/dtoverlay.c,1888,ai_only,,
+Stack-based Buffer Overflow via Unbounded sprintf,likely,CWE-120,helpers/dtoverlay/dtoverlay.c,2610,ai_only,,
+Integer Overflow Leading to Heap Buffer Overflow in dynstring_set_size Sizing Suffix Calculation,likely,CWE-190,helpers/dtoverlay/dtoverlay.c,290,ai_only,,
+Unchecked malloc return value leads to NULL pointer dereference,confirmed,CWE-476,helpers/dtoverlay/dtoverlay.c,2320,common,nullPointerOutOfMemory,2321

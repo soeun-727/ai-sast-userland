@@ -1,0 +1,11 @@
+{
+  "batch_id": "batch-02",
+  "relative_path": "host_applications/linux/libs/debug_sym/debug_sym.c",
+  "language": "c",
+  "source_bytes": 29174,
+  "function_count": 18,
+  "root_has_parse_error": false,
+  "total_estimated_tokens": 5090,
+  "largest_chunk_tokens": 2702,
+  "parse_error_chunks": 0
+}
